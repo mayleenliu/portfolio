@@ -717,7 +717,7 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Timeline
 --------------------------------------------------------------*/
 
@@ -752,6 +752,8 @@ section {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid lightgrey;
 }
+
+
 
 @keyframes details-show {
   from {
@@ -834,15 +836,17 @@ section {
   cursor: pointer;
 }
 
+
 #timeline-container details[open] summary,
 #timeline-container details[open] summary:hover {
   color: #333;
-  background: 728394
+  background: 728394;
 }
 
 #timeline-container .content {
   padding: 10px;
   border: none;
+
 }
 
 #timeline-container summary:hover strong,
@@ -850,6 +854,31 @@ details[open] summary strong,
 summary:hover::before,
 details[open] summary::before {
   color: #0563bb;
+}
+
+/* Added styles for the container */
+#timeline-container .content .container {
+  padding: 20px;
+  border: 1px solid lightgrey;
+  background: #f2f2f2;
+  margin-top: 10px;
+}
+
+#timeline-container details:not(:last-child) summary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+}
+
+
+#timeline-container .activity summary {
+  cursor: default;
+  font-size: 14px;
+  margin-left: 50px;
 }
 
 
