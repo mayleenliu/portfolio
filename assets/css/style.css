@@ -887,7 +887,7 @@ details[open] summary::before {
 /*--------------------------------------------------------------
 # Projects
 --------------------------------------------------------------*/
-.services .icon-box {
+/* .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -1015,7 +1015,104 @@ details[open] summary::before {
 
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
+} */
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 70px 20px 70px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
+  position: relative;
+  overflow: hidden;
 }
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box .icon img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box .icon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.services .icon-box:hover .icon-overlay {
+  opacity: 1;
+}
+
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .icon-box h4 a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+.services .iconbox-blue .icon-overlay {
+  background-color: rgba(24, 106, 231, 0.8);
+}
+
+.services .iconbox-orange .icon-overlay {
+  background-color: rgba(255, 167, 110, 0.8);
+}
+
+.services .iconbox-pink .icon-overlay {
+  background-color: rgba(232, 3, 104, 0.8);
+}
+
+.services .iconbox-yellow .icon-overlay {
+  background-color: rgba(255, 187, 44, 0.8);
+}
+
+.services .iconbox-red .icon-overlay {
+  background-color: rgba(255, 88, 40, 0.8);
+}
+
+.services .iconbox-teal .icon-overlay {
+  background-color: rgba(17, 219, 207, 0.8);
+}
+
 
 /*--------------------------------------------------------------
 # Contact
